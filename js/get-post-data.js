@@ -60,7 +60,7 @@ $('document').ready(function () {
 	}
 	state_data_load();
 
-
+//get popular post data
 	function get_popular_data_load(category) {
 		$.ajax({
 			url: 'php/get_sidebar_data.php',
@@ -71,9 +71,11 @@ $('document').ready(function () {
 				if(category=='p_post'){
 					$('#show_popular_post').html(data);
 				}
-				// if(category=='p_blog'){
-				// 	$('#show_popular_blog').html(data);
-				// }
+				if(category=='allpost'){
+
+					$('#show_popular_blog').html(data);
+
+				}
 				if(category=='top_place'){
 					$('#show_top_place').html(data);
 				}
@@ -83,7 +85,7 @@ $('document').ready(function () {
 		});
 	}
 	get_popular_data_load('p_post');
-	// get_popular_data_load('p_blog');
+	get_popular_data_load('allpost');
 	get_popular_data_load('top_place');
 
 

@@ -36,7 +36,7 @@ body a{
 }
 .place-location iframe{
 	width: 100%;
-	height: auto;
+	height: 50vh;
 }
 .post-date-holder p{
 	font-family: 'Times New Roman', Times, serif;

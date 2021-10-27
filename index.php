@@ -103,19 +103,22 @@
 
 
                 <div class="top-post">
-                    <h1 class="headding"> Our Blog Post</h1>
+                    <h1 class="headding"> All Post</h1>
                     <div class="popular-post" id="show_popular_blog">
-
-                    </div>
-                    <!-- -------Google Ads-------- -->
-                    <div class="ads" style="height: 30vh;">
+                     
 
 
                     </div>
-                    <!-- -------Google Ads--------X--- -->
+                    
 
 
                 </div>
+                <!-- -------Google Ads-------- -->
+                <div class="ads" style="height: 30vh;">
+
+
+                </div>
+                <!-- -------Google Ads--------X--- -->
 
             </div>
         </div>

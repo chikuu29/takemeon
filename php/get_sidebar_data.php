@@ -60,6 +60,31 @@ if($_POST['type']=="top_place"){
     }else{
         echo "<p>No data Availble </p> ";
     }
+
+
+}
+
+if($_POST['type']=="allpost"){
+
+
+    $sql = mysqli_query($con,"SELECT * FROM blog_post");
+    if(mysqli_num_rows($sql)>0){
+        
+        while($row=mysqli_fetch_assoc($sql)){
+       
+            echo "<li><a href='post.php?q=$row[blog_post_slug]'>$row[blog_post_name]</a></li>";
+
+        }
+    
+    
+    }else{
+        echo "<p>No data Availble </p> ";
     }
+
+    
+}
+
+
+
 
 ?>
