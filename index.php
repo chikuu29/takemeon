@@ -37,15 +37,7 @@
                     <li><a href="">bbsr</a></li>
                     <li><a href="">baripada</a></li>
                     <li><a href="">puri</a></li>
-                    <li><a href="">cuttack</a></li>
-                    <li><a href="">cuttack</a></li>
-                    <li><a href="">bbsr</a></li>
-                    <li><a href="">baripada</a></li>
-                    <li><a href="">puri</a></li>
-                    <li><a href="">cuttack</a></li>
-                    <li><a href="">cuttack</a></li>
-                    <li><a href="">bbsr</a></li>
-                    <li><a href="">baripada</a>
+                  
                        
 
                 </ul>
