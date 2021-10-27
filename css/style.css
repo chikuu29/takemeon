@@ -200,7 +200,6 @@ body {
 }
 .search-box{
    display: flex; 
-  
    margin: auto;
    height: 100vh;
    padding-top: 110px;
@@ -295,12 +294,13 @@ form.search button{
 
 .third-half ul li{
    display: block;
- 
-   padding: 10px 20px;
+   
 }
 .third-half ul li a{
    color:wheat;
    text-transform: capitalize;
+   display: block;
+   padding: 10px 20px;
 }
 .third-half ul li:hover{
    color:red;
