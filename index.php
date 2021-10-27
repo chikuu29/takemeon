@@ -24,19 +24,14 @@
             </div>
             <div class="second-half">
                 <form action="#" class="search">
-                    <input type="text" name="search" placeholder="Find Place...." onkeyup="search_value(this.value)">
+                    <input type="text" id="searh_input" name="search" placeholder="Find Place...." onkeyup="get_search_result(this.value)">
                     <button type="submit"><i class="fas fa-search"></i></button>
                 </form>
 
             </div>
             <div class="third-half" id="search-item">
-                <ul>
-                    <li><a href="">puri</a></li>
-                    <li><a href="">cuttack</a></li>
-                    <li><a href="">cuttack</a></li>
-                    <li><a href="">bbsr</a></li>
-                    <li><a href="">baripada</a></li>
-                    <li><a href="">puri</a></li>
+                <ul id="searh_holder">
+                    
                   
                        
 
@@ -227,6 +222,8 @@
     <?php include 'contact.php'  ?>
     <!-------- foooter -----X------>
     <script src="js/get-post-data.js"></script>
+    <!-- adding new search js file  -->
+    <script src="js/fetch_search_item.js"></script>
 
 
 
