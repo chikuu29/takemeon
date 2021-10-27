@@ -1,0 +1,282 @@
+/* *{
+    text-decoration: none;
+    color: black;
+} */
+
+#fetch-animation{
+    background: #ffffff url('preloader2.gif') no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 999999999;
+    transition: 0.5 ease;
+   
+ 
+ }
+ #admin-user-form{
+    
+    min-width: 500px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #8888;
+   box-shadow: 2px 5px 15px 4px #1b203d;
+   border: black;
+ }
+
+label{
+    margin-bottom: 5px;
+}
+
+.image-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.image-logo span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+img{
+    width: 160px;
+}
+.form-container{
+    min-width: 300px;
+
+}
+
+
+
+
+body{
+   margin: 0px;
+   padding: 0px;
+   /*background-color: #888;*/
+   font-family: system-ui;
+   color: #f1f1f1;
+   background-color: #254073;
+   /*background-color: #e2eefa;*/
+}
+
+body i{
+    color: #f1f1f1;
+  
+}
+
+.logo img{
+    filter: brightness(1) invert(1); 
+}
+.sidenav{
+    display: inline-block;
+    height: 100%;  
+    width: 250px;
+    position: fixed;
+    background-color: #111;
+    overflow: auto;
+    transition: 0.5s;
+    
+   
+   
+}
+.sidenav img{
+    
+    text-align: center;
+    display: block;
+    margin: auto;
+
+    
+}
+.sidenav a{
+    padding: 15px 8px 15px 32px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+.sidenav a:hover{
+    color: #f1f1f1;
+    background-color: #3848a0;
+}
+.active{
+    background-color: #3848a0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+.sidenav2 .col-div-6 img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#main{
+  
+    margin-left: 250px;
+    padding: 1px 16px;
+    height: 1000px;
+  
+    /* margin-left: 250px; */
+   
+
+}
+.user{
+    display: flex;
+    justify-content: center;
+
+}
+.user .user-clm{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    justify-content: center;
+    align-items: center;
+
+}
+.user-clm span{
+    color: #888;
+    font-weight: bold;
+    font-size: 9px;
+
+}
+.user p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0;
+    font-size: 9px;
+    font-weight: bold;
+}
+.col-div-6 .fas{
+    font-size: 25px;
+    cursor: pointer;
+
+}
+.sidenav2{
+    padding: 20px 40px 20px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid red;
+  
+   
+}
+
+.col-div-6 .color{
+    margin: 5px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+.light{
+    background-color: white;
+}
+.darck{
+    background-color: black;
+}
+
+
+.Headder-text{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.search input{
+    border: none;
+    outline: none;
+    border-radius:5px ;
+    padding-left:10px ;
+}
+
+
+
+
+/* ------user table------ */
+.header-txt-serch-holder{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+   
+
+}
+
+
+
+
+#user-table{
+    border: 1px solid black;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 5px;
+
+}
+#user-table th ,tr{
+    border: 1px solid #888;
+    text-align: center;
+    padding:7px ;
+
+}
+ #user-table tbody tr:hover{
+    background-color: #676e71;
+    color: #111;
+} 
+#user-table thead th{
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+
+ }
+
+ #user-table thead{
+     background-color: #3848a0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:996px) 
+{
+
+    
+.image-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   gap: 10px;
+
+}
+.image-logo span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+    img{
+        width: 130px;
+    }
+
+}

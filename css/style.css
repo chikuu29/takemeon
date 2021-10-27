@@ -1,0 +1,697 @@
+/*-------------- this is  the defult css file where wee style the desktop navigatin bar---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@700&family=Poppins:wght@600&family=Roboto+Mono:ital,wght@1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.swal-overlay {
+        z-index: 99999999999999;
+        
+      };
+
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+   
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+/* ----------------------------PRELOADER-------------------------------- */
+
+#preloader{
+   /* background:#000 url('../img/preloader2.gif') no-repeat center center; */
+   background: white url('../img/loading.gif') no-repeat center;
+   background-size: 15%;
+   height: 100vh;
+   width: 100%;
+   position: fixed;
+   z-index: 999999999;
+   transition: 0.5 ease;
+
+}
+
+/* ----------------------------PRELOADER-------------------X------------- */
+
+/* ----------------------------NAV-BAR------------------------------------ */
+.nav-scoll{
+    display: flex;
+  
+}
+.navholder{
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    transition: 0.3s;
+    z-index: 99;   
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3); 
+}
+
+.desktop-nav a{
+    float: left;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+    transition: 3s;
+  }
+.desktop-nav a i{
+    padding-right: 5px;
+}
+
+
+.image-logo{
+
+    margin-left: 15px;
+        
+} 
+
+.image-logo img{
+    
+    height: 60px;
+    border-radius: 50%;
+    font-size: 30px;
+    padding-bottom: 0;  
+    filter: brightness(1) invert(1);   
+}
+.login{
+    text-align: center;
+    margin-right: 15px;
+}
+.login a{
+    float: left;
+    padding: 13px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+    transition: 3s;
+    font-weight: bold;
+ 
+}
+
+.login a i{
+    margin-right: 3px;
+ 
+}
+
+
+/* this class add by java script */
+
+.activescoll {
+    background-Color:rgba(0,0,0,0.3);
+    border-bottom: 1px solid #888;
+        
+} 
+/* this class add by java script */
+
+
+/* css for navigation background */
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../img/bg2.jpg') no-repeat center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+
+}
+
+
+/* -------------------------nav bar animation Css------------------------------------- */
+.desktop-nav a::after{
+    content: '';
+    position: absolute;
+    background:deeppink;
+    width: 100%;
+    height: 0.20rem;
+    bottom: 0;
+    left: 0;
+    right: 10;
+    transform: scale(0,1);
+    transition: 0.4s ease;
+
+}
+.desktop-nav a:hover{
+    color: deeppink;
+    transform: scale(1.1);
+}
+
+.desktop-nav a:hover::after{
+    transform: scale(1,1);
+   
+}
+/* -------------------------nav bar animation Css---------------X---------------------- */
+
+/* --------------------animation for login button start hear -------------------------*/
+.login a:hover{
+    color: deeppink;
+   
+}
+.login a::after{
+    content: '';
+    position: absolute;
+    background:deeppink;
+    width: 100%;
+    height: 0.20rem;
+    bottom: 0;
+    left: 0;
+    right: 10;
+    transform: scale(0,1);
+    transition: 0.4s ease;
+}
+.login a:hover::after{
+    transform: scale(1,1);
+  
+}
+/* --------------------animation for login button  ----------X---------------*/
+
+
+
+/* ------------mobail feture all off css -----------------*/
+
+#mobail-nav,.home,.mlogin,.search-box{
+    display: none;
+}
+/* ----------------mobail feture all off css---------------------- */
+/* ---------------------SEARCH BAR----------------------- */
+
+.search-section{
+    height: 100vh;
+   
+   
+
+}
+.search-box{
+   display: flex; 
+  
+   margin: auto;
+   height: 100vh;
+   padding-top: 110px;
+   flex-direction: column;
+   text-align: center;
+   max-width: 80%;
+   gap: 25px;
+   
+}
+.first-half{
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+}
+.first-half h2{
+   font-family: roboto,sans-serif;
+   margin-bottom: 10px;
+   font-size: 50px;
+   color: #888;
+   word-spacing: 12px;
+
+  
+   
+}
+
+.first-half p{
+   color: #f1f1f1;
+}
+
+.second-half{
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+
+   
+}
+.search{
+   display: flex;
+   width: 100%;
+   justify-content: center;
+}
+form.search input[type='text']{
+   padding: 10px 10px 10px 15px;
+   font-size: 20px;
+   width: 80%;
+   outline: none;
+   float: left;
+   border-radius: 5px 0px 0px 5px;
+   margin-right:0px ;
+   border: none;
+   font-weight: bold;
+   color: red;
+  
+
+
+}
+
+form.search button{
+   float: left;
+   padding: 10px 15px;
+   font-size: 17px;
+   outline: none;
+   border-radius: 0px 5px 5px 0px;
+   border: none;
+   border-left:2px solid red ;
+   cursor: pointer;
+
+ 
+}
+.third-half{
+   display: none;
+   text-align: start;
+   background: transparent;
+   border-radius: 5px;
+   list-style: none;
+   width: 80%;
+   align-self: center;
+   height: 40vh;
+   overflow: scroll;
+   box-shadow: 0px 1px 11px white;
+
+}
+.third-half::-webkit-scrollbar {
+   display: none;
+ }
+.third-half ul{
+   list-style: none;
+  
+  
+
+}
+
+.third-half ul li{
+   display: block;
+ 
+   padding: 10px 20px;
+}
+.third-half ul li a{
+   color:wheat;
+   text-transform: capitalize;
+}
+.third-half ul li:hover{
+   color:red;
+   background-color: #888;
+
+   
+}
+
+/* this css for text animatino  */
+.typing {
+   font-size: 2.5em;
+   padding-right: 2px;
+   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+
+/* ---------------------SEARCH BAR---------X-------------- */
+/* ---------------------footer section css----------------------------- */
+
+.about-us{
+    height: 100%;
+    width: 100%;
+    padding: 40px 20px 40px 20px;
+    background-color: #222;
+
+}
+.main-footer{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.main-footer .cm1{
+    align-items: center;
+    text-align: center;
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top:10px ;
+    margin-bottom: 10px;
+}
+.main-footer .cm1 img{
+    height: 60px;
+    
+     
+}
+.main-footer .cm2{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 50%;
+    box-sizing: content-box;
+    padding: 9px;
+  
+   
+   
+}
+.main-footer .cm2 h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+}
+.main-footer .cm2 p{
+    
+    text-align: justify;
+    font-size: 14px;
+    font-family: roboto,sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #fff;
+}
+.main-footer .cm2 a{
+    text-align: justify;
+  
+    font-family: roboto,sans-serif;
+    padding-left: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #4db2ec;
+}
+.main-footer .cm3{
+    flex: 50%;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 8px;
+     
+
+}
+.cm3{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    font-size: 10px;
+}
+.f-social{
+    display: flex;
+   justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+   
+  
+}
+.f-social a{
+    margin-right: 20px;
+}
+
+.f-social a i{
+   
+    transition: 2s;
+    font-size: 20px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #888;
+    border-radius: 5px;
+    border:1px solid hotpink;
+    color: #fff;
+    color: #222;
+
+
+  
+  
+}
+
+
+.f-social a i:hover{
+    background-color: #222;
+    color: #fff;
+   
+
+}
+
+.last-node{
+    background-color: #888;
+    background: rgba(0, 0, 0, 0.6);
+    
+ 
+    
+    
+}
+.last-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+  
+    align-items: center;
+    padding: 5px;
+}
+.last-cont .c2{
+    display: flex;
+    text-align: center;
+}
+.last-cont .c2 li{
+    list-style: none;
+    padding: 5px;
+}
+
+
+/* -----special stysle----- */
+.item{
+   
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: 145px;
+    overflow: hidden;
+    align-items: center;
+    box-shadow: 0 15px 20px rgba(0, 0,0, 0.2);
+    padding-bottom: 5px;
+    margin: 0 5px 20px;
+    text-align: center;
+    border-radius: 14px;
+    transition: 6s;
+    position: relative;
+
+
+}
+.item:hover{
+    transform: scale(1.1);
+}
+
+/* ---------------------footer section css----------X--------------------- */
+
+/* This is css for  the Mobail   */
+
+@media only screen and (max-width:650px) {
+
+
+    /* hear  we close the all  desktop features */
+    /* hear  we close the all  desktop features */
+    /* hear  we close the all  desktop features */
+    /* hear  we close the all  desktop features */
+    
+    
+    .navholder{
+      width: 100%;
+      overflow: hidden;
+      
+     
+    }
+    
+    
+    
+    
+    .desktop-nav,.login{
+        display: none;
+    }
+    
+    
+    
+    
+    /* hear  we close the all  desktop features */
+    /* hear  we close the all  desktop features */
+    /* hear  we close the all  desktop features */
+    
+    
+    .navigation{
+         flex-direction: row-reverse;
+         /* background: rgba(0, 0, 0, 0.6); */
+    }
+    .image-logo{
+    
+              margin-left: 0;
+    } 
+    
+    #mobail-nav{
+    
+              display: block;
+              width: 0%; /*bydefult witdth zero we chnage using java script when user click the button */
+      
+    }
+      
+    /* navigation search */
+    /* navigation search */
+    /* navigation search */
+    .navigation .mlogin{
+        display: block;
+        margin-right: 20px;
+        font-size: 23px;
+        cursor: pointer;
+        text-align: center;
+        padding: 5px;
+        text-align: center;
+        transition: 0.9s;
+       
+        border-radius: 5px;
+        color: white;
+        
+    }
+    
+    .navigation .mlogin:hover{
+        display: block;
+        padding: 5px;
+    
+        background-color:rgba(0,0,0, 0.2);
+        color: #f1f1f1;
+        border-radius: 5px;
+      
+    }
+    /* navigation search box style css */
+    
+    .navigation .home{
+      display: block;
+      font-size: 25px;
+      color: black;
+      margin-left: 20px;
+      cursor: pointer;
+      padding: 5px;
+    
+      border-radius: 5px;
+      color: white;
+    
+      transition: 0.9s;
+    
+    }
+    .navigation .home:hover{
+      display: block;
+      padding: 5px;
+      background-color:rgba(0,0,0, 0.2);
+      border-radius: 5px;
+      color: #f1f1f1;
+    
+    }
+
+    
+    /* navigation search box style css */
+      
+   
+      
+    /* mobail nava bar */
+    /* mobail nava bar */
+    /* mobail nava bar */
+    .overlay{
+              
+              height: 100%;
+              width: 0;
+              position: fixed;
+              z-index: 99999;
+              top: 0;
+              left: 0;
+              /* background-color: rgb(0,0,0);
+              background-color: rgba(0,0,0, 0.9); */
+              background-color: white;
+              overflow-x: hidden;
+              padding-top: 60px;
+              transition: 0.5s;
+            } 
+    .overlay-content {
+              /* position: relative; */
+             
+              width: 100%;
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+             align-items: center;
+             
+    }
+    .overlay a {
+              padding:10px;
+              text-decoration: none;
+              font-size: 15px;
+              color: black;
+              display: block;
+              transition: 0.3s;
+              margin: 5px;
+              
+              align-items: center;
+              display: flex;
+          
+    }
+    .overlay a i{
+              padding-right: 7px;
+             
+    }
+    
+    .overlay a:hover,.overlay a:focus {
+             
+              color: red;
+    }
+            
+    .overlay .closebtn {
+              position: absolute;
+              top: 1px;
+              right: 20px;
+              font-size: 36px;
+              
+            }
+    
+    /* social follw itemcss */
+    .social-follow{
+      text-align: center;
+      margin-top: 30px;
+    
+    
+    }
+    .social-follow a{
+        padding: 10px;
+        display: block;
+    
+        padding: 5px 5px 5px 30px;
+    
+    }
+           
+     /* **********************************************************************************       */
+    
+    
+     /* css for footer */
+     .last-cont .c1{
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    
+    .last-cont .c2{
+      display: none;
+    }
+    
+           
+    
+    
+    
+    
+    }
+      

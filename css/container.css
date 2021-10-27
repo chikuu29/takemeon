@@ -1,0 +1,521 @@
+* {
+    box-sizing: border-box;
+  }
+/* ----------Recent-Post------------ */
+
+.container-2{
+    width: 90%;
+    margin: auto;
+
+
+}
+.recent-post-container{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+   
+ 
+   
+}
+
+.page-containt-holder{
+    width:70%;
+}
+
+.page-containt img{
+   
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+ 
+}
+#googl_map iframe{
+    width: 100%;
+}
+.post-details-holder{
+   text-align: center;
+   position: relative;
+   z-index: -1;
+  
+   
+}
+.post-details{
+    background-color: skyblue;
+    padding: 4px 7px;
+    border-radius: 14px 0px 0px 14px;
+    display: inline-block;
+    position: absolute;
+    bottom: 8px;
+    right: 0px;
+    border-right: 2px solid red;
+    border-left: 2px solid blue;
+   
+
+    
+}
+.post-details span{
+    padding-right: 10px;
+}
+.page-containt a h1{
+    font-size: 1.2em;
+    padding: 5px;
+    color: #222;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+
+}
+
+.page-containt a h1:hover{
+    color: red;
+}
+.page-containt .post-desc{
+    text-indent: 50px;
+    text-justify:inter-word;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    text-align: justify;
+}
+.page-containt .read-more{
+    padding: 7px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: skyblue;
+    margin-top: 15px;
+    border-radius: 5px;
+    align-self: center;
+    border-left: 2px solid red;
+    border-right: 2px solid blue;
+    /* border: 1px solid black; */
+  
+    
+}
+.page-containt .read-more:hover{
+    background-color: rgb(120, 208, 243);
+    
+    border-left: 2px solid blue;
+    border-right: 2px solid red;
+}
+.page-containt .read-more i{
+    padding-left: 5px;
+    padding-top: 1px;
+    align-items: center;
+  
+}
+.page-containt{
+    margin-bottom: 20px;
+    transition: all 10s;
+    box-shadow: 1px 1px 11px 2px #888;
+    padding:10px 10px 20px 10px;
+    border-radius: 5px;
+}
+
+/* ------Pagination-------- */
+.pagination{
+    text-align: center;
+   display: flex;
+   justify-content: center;
+  
+}
+.pagination a{
+    padding: 10px 14px;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+}
+.pagination .selectd-page{
+    border-radius: 50%;
+    background-color: rgb(235, 229, 229);
+}
+.pagination a i{
+    font-size: 20px;
+}
+
+/* ------Pagination----X---- */
+/* ------aside----- */
+.sidebar{
+    width: 30%;
+}
+.recent-post-container .top-post{
+    padding: 10px;
+    margin-left: 20px;
+   
+
+}
+.popular-post-container img{
+    width: 80px;
+    height: 80px;
+
+}
+.popular-post-container{
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 2px;
+    align-items: center;
+    border-radius: 5px;
+    border-bottom: 2px solid red;
+    border-top: 2px solid blue;
+
+}
+.popular-post-container:hover{
+    border-top: 2px solid red;
+    border-bottom: 2px solid blue;
+    border-radius: 5px;
+    box-shadow: 1px 1px 11px 2px #888;
+
+    
+}
+.popular-post .popular-post-container .td-holder{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 100%;
+   
+
+}
+.td-holder .read-more{
+    
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: skyblue;
+    margin-top: 15px;
+    border-radius: 10px;
+    align-self: center;
+    padding: 6px 12px;
+    border-bottom: 2px solid red;
+    border-top: 2px solid blue;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 10px;
+  
+}
+.td-holder .read-more:hover{
+   
+    border-bottom: 2px solid blue;
+    border-top: 2px solid red;
+}
+.td-holder .read-more i{
+    padding-left: 5px;
+    font-size: 10px;
+}
+.popular-post-deatails span{
+    padding:5px;
+    font-size: 15px;
+
+
+}
+
+
+
+
+/* ----------Recent-Post--------X---- */
+/* --------------TOP PLACE------------- */
+.container{
+    
+    width: 90%;
+    margin: 20px auto 20px auto;
+}
+
+
+.main-content{
+    display: flex;
+    margin: auto;
+    
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+   
+   
+    
+}
+
+.main-content::-webkit-scrollbar {
+    display: none;
+  }
+
+.place{
+   
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 200px;
+    overflow: hidden;
+    align-items: center;
+    box-shadow: 0 15px 20px rgba(0, 0,0, 0.2);
+    margin: 10px;
+    text-align: center;
+    border-radius: 14px;
+    transition: 6s;
+
+}
+/* .place:hover{
+    transform: scale(1.1);
+} */
+
+.place a img{
+    width: 200px; height: 200px;
+    
+}
+
+.placetext{
+
+    text-align: center;
+    margin: 10px;
+    overflow: hidden;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    
+    
+}
+.place a:hover{
+    text-decoration: underline;
+
+}
+.content-bg{
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 11;
+  }
+ 
+  
+.item-text-center{
+      width: 100%;
+      font-size:25px;
+      letter-spacing: 7px;
+      color: white;
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  
+  }
+  
+/* .content-bg .item-text-center{
+      
+  
+  } */
+  
+/* ---------------------Youtube Video Holder--------------------- */
+.headding{
+    font-size: 2em;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border-left: 4px solid red;
+}
+
+
+/* --------------TOP PLACE-------X------ */
+
+
+
+.yt-video-holder{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+}
+.yt-video{
+    /* min-width: 70px; */
+    /* margin: 15px;
+     */
+     width:283px;
+     height:172px;
+     margin:20px;
+     box-shadow: 0 15px 20px rgba(0, 0,0, 0.2);
+     overflow: hidden;
+
+}
+.yt-video-holder .yt-video iframe{
+    width:283px;
+    height:172px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ----------------Contact-Us----------- */
+.Contact{
+    width: 100%;
+    box-shadow: 2px 4px 14px #8888;
+    border-radius: 14px;
+    padding: 5px;
+   
+}
+
+.Contact form{
+
+   
+    padding: 20px;
+    align-items: center;
+
+}
+.Contact form input{
+    width: 100%;
+    padding: 12px 14px;
+    outline: none;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #888;
+    /* font-family: cursive; */
+    
+}
+.Contact form input:focus{
+    box-shadow: 1px 1px 11px 2px skyblue;
+    border-bottom: 2px solid red;
+   
+}
+.Contact form #subject{
+    width: 100%;
+    height: 200px;
+    outline: none;
+    padding-left:10px ;
+    padding-top: 10px;
+    border-radius: 14px;
+    font-size: 20px;
+    /* font-family: cursive; */
+    
+}
+.Contact form #subject:focus{
+    box-shadow: 1px 1px 11px 2px skyblue;
+   
+}
+.cbtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+}
+.cbtn button{
+    padding: 12px 14px;
+    background-color: #888;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-left: 4px solid red;
+    border-right: 4px solid blue;
+    width: 50%;
+    margin: 10px;
+
+}
+.cbtn button:hover{
+    /* background-color: #f1f1f1; */
+    color: #222;
+    border-left: 4px solid blue;
+    border-right: 4px solid red;
+}
+
+/* --------mobail-style--------- */
+@media only screen and (max-width:650px) {
+    .headding{
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        padding: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        border-left: 4px solid red;
+    }
+
+    /* ---------------------Recent Post mobail----------- */
+    .recent-post-container{
+        justify-content: center;
+    }
+
+    .page-containt img{
+   
+        /* width: 100%; */
+        height: 25vh;
+        object-fit: cover;
+     
+    }
+
+    .page-containt-holder{
+        min-width:100%;
+      }
+    
+      .post-details span{
+        padding-right: 5px;
+        font-size: 10px;
+        padding: 2px;
+      }
+    
+      .page-containt .post-desc{
+          font-size: 0.5rem;
+    
+      }
+    
+      .popular-post-container{
+     
+        font-size: 15px;
+    
+    }
+    .recent-post-container .top-post {
+        padding: 10px;
+        margin-left:0px;
+    }
+
+    .td-holder .read-more{
+    
+        padding: 2px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: skyblue;
+        margin-top: 10px;
+        border-radius: 10px;
+        align-self: center;
+        padding: 4px 12px;
+        border-bottom: 2px solid red;
+        border-top: 2px solid blue;
+        font-weight: bold;
+        font-size: 10px;
+      
+    }
+    .td-holder .read-more i{
+        font-size: 9px;
+    }
+    .popular-post-deatails span{
+        padding:5px;
+        font-size: 6px;
+
+
+    }
+    .sidebar{
+        min-width: 100%;
+        box-shadow: rgb(165 159 159) 0px 1px 16px 1px;
+    }
+      /* ---------------------Recent Post mobail-------X---- */
+    /* ----------------Contact-Us----------- */
+    .cbtn button{
+        padding: 8px 30px;
+        background-color: #888;
+        outline: none;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 5px;
+    
+    
+    }
+    
+    
+    }
