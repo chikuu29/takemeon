@@ -26,7 +26,15 @@ if(mysqli_num_rows($sql4)>=1){
         $output=$output."<li><a href='post.php?q=$row4[blog_post_slug]'>$row4[blog_post_name]</a></li>";
     }
 }
-
+$sql5= mysqli_query($con,"SELECT * FROM city WHERE city_name LIKE '%{$input_string}%' OR slug LIKE '%{$input_string}%'");
+if(mysqli_num_rows($sql5)>=1){
+    while($row5=mysqli_fetch_assoc($sql5)){
+        $output=$output."<li><a href='cities.php?city=$row5[slug]'>$row5[city_name]</a></li>";
+    }
+}
+if(empty($output)){
+    $output=$output."<li><a href='#'>No Data Found</a></li>";
+}
 echo $output;
 
 
