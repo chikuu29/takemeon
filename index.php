@@ -25,7 +25,7 @@
             <div class="second-half">
                 <form action="#" class="search">
                     <input type="text" id="searh_input" name="search" placeholder="Find Place...." onkeyup="get_search_result(this.value)">
-                    <button type="submit"><i class="fas fa-search"></i></button>
+                    <button type="reset" id="search_btn"><i class="fas fa-search"></i></button>
                 </form>
 
             </div>

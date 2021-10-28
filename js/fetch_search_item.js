@@ -5,10 +5,13 @@ var search_result=document.getElementById('search-item');
 function get_search_result(str) {
     
   
-    if (str==" ") {
+    if (str=="") {
         search_result.style.display="none";
+       
+        document.getElementById('search_btn').innerHTML='<i class="fas fa-search"></i>';
+
     }else{
-        
+        document.getElementById('search_btn').innerHTML='<i class="fas fa-times"></i>';
         findsearchiem(str);
     }
    
